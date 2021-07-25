@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="grid">
+        <button data-vending-style="normal">Normal-Button</button>
+        <button data-vending-style="flex">Flex</button>
+        <button data-vending-style="grid">Grid</button>
+        <main id="vending-machine">
+            <div id="title">
+                <h1>My Cool Vending Machine</h1>
+            </div>
+            <div id="items">
+                <span class="vending-item">🍔</span>
+                <span class="vending-item">🌭</span>
+                <span class="vending-item">🍕</span>
+                <span class="vending-item">🍟</span>
+                <span class="vending-item">🍗</span>
+                <span class="vending-item">🥓</span>
+                <span class="vending-item">🍤</span>
+                <span class="vending-item">🥟</span>
+                <span class="vending-item">🍩</span>
+                <span class="vending-item">🍪</span>
+                <span class="vending-item">🍫</span>
+                <span class="vending-item">🍎</span>
+            </div>
+            <div id="controls">
+                <div class="control-item input-screen">
+                    <p>A1</p>
+                </div>
+                <span class="control-item"><button>A</button></span>
+                <span class="control-item"><button>B</button></span>
+                <span class="control-item"><button>C</button></span>
+                <span class="control-item"><button>1</button></span>
+                <span class="control-item"><button>2</button></span>
+                <span class="control-item"><button>3</button></span>
+                <span class="control-item"><button>4</button></span>
+            </div>
+            <div id="item-slot"></div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

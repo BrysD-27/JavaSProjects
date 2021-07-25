@@ -1,0 +1,17 @@
+$('.card.red h3').text('Abacus Central');
+$('.blue.card h3').text('Grenadine Dreams');
+$('.white.card h3').html('<code>CODE</code> Central');
+$('h1').text('Hello, World!');
+$('body').css('font-family', 'sans-serif');
+$('body').css('background-color', '#777');
+$('section').css('display', 'flex');
+$('.card').css('border', '2px solid black').css('padding', '6px').css('margin', '8px');
+$('.red.card').css('background-color', 'red');
+$('.blue.card').css('background-color', 'blue');
+$('.white.card').css('background-color', 'white');
+$('.red.card, .blue.card').css('color', 'white');
+$('.red.card, .blue.card, .white.card').css('flex', '1');
+$('code').css('font-size', '1.7em');
+$('.lead-cards p').css('font-family', 'cursive');
+$('section:nth-of-type(2)').css('transition', 'transform 3s ease').css('transform', 'rotate(30deg) scale(.5)');
+$('.deprecated').remove();

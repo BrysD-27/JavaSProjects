@@ -1,0 +1,181 @@
+#app {
+    width: 95%;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+#app #vending-machine {
+    border: 1px solid black;
+    background-color: lightgray;
+    height: 500px;
+    width: 400px;
+}
+
+#app #vending-machine #title {
+    background-color: gray;
+}
+
+#app #vending-machine #items {
+    background-color: black;
+}
+
+#app #vending-machine #controls {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#app #vending-machine .input-screen {
+    background-color: black;
+    color: greenyellow;
+    font-size: 18px;
+    text-align: center;
+}
+
+#app #vending-machine #item-slot {
+    background-color: black;
+}
+
+
+/* How we do it with fixed values */
+
+#app.normal #title {
+    height: 50px;
+}
+
+#app.normal #items {
+    float: left;
+    width: 250px;
+    height: 330px;
+    margin: 25px;
+}
+
+#app.normal #items span {
+    width: 80px;
+    display: inline-block;
+    font-size: 30px;
+    height: 83px;
+    text-align: center;
+}
+
+#app.normal #controls {
+    float: right;
+    width: 98px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+#app.normal #controls .input-screen {
+    height: 25px;
+    width: 80px;
+    margin: 0 10px 10px;
+}
+
+#app.normal #controls .control-item button {
+    font-size: 18px;
+}
+
+#app.normal #item-slot {
+    width: 85%;
+    margin: auto;
+    height: 60px;
+    clear: both;
+}
+
+
+/* how we can do it with more responsive ideas */
+
+#app.flex #vending-machine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#app.flex #title {
+    width: 100%;
+}
+
+#app.flex #items {
+    width: 60%;
+    margin: 25px;
+}
+
+#app.flex #items span {
+    width: 30%;
+    display: inline-block;
+    font-size: 30px;
+    height: 25%;
+    text-align: center;
+    height: 70px;
+}
+
+#app.flex #controls {
+    width: 23%;
+    height: 35%;
+    margin-top: 25px;
+}
+
+#app.flex #controls .input-screen {
+    height: 25px;
+    width: 80px;
+    margin: 0 10px 10px;
+}
+
+#app.flex #item-slot {
+    width: 85%;
+    height: 60px;
+    margin: auto;
+}
+
+
+/* how to do it with display: grid */
+
+#app.grid #vending-machine {
+    display: grid;
+    grid-template-rows: 3em 25em 3em;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 400px;
+}
+
+#app.grid #title {
+    grid-column: 1/end;
+}
+
+#app.grid #items {
+    grid-column: 1/4;
+    margin: 25px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#app.grid #items span {
+    font-size: 30px;
+}
+
+#app.grid #controls {
+    grid-column: 4;
+    height: 45%;
+    margin-top: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 20% repeat(3, 1fr);
+}
+
+#app.grid .input-screen {
+    grid-column: 1/end;
+    margin: 2px 5px;
+}
+
+#app.grid .input-screen p {
+    margin: 0;
+}
+
+#app.grid #item-slot {
+    grid-column: 2/4;
+    margin: 10px 0;
+}
